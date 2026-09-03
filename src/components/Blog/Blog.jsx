@@ -1,5 +1,5 @@
 
-
+import { FaBookmark } from "react-icons/fa";
 const Blog = ({ blog }) => {
     console.log(blog)
     const {cover,author_img,author,posted_date,reading_time,title,hashtag}=blog;
@@ -16,16 +16,19 @@ const Blog = ({ blog }) => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="flex gap-2">
                         <p>{reading_time} min read</p>
+                        {/* use react icon and something install in bash and import */}
+                        <button><FaBookmark></FaBookmark></button>
                     </div>
 
                 </div>
                 <div className="flex flex-col gap-3 mt-5">
                     <p className="text-4xl font-extrabold">{title}</p>
                     <p>
+                        {/* hash tag gula array modhe ache */}
                         {
-                        blog.hashtag
+                        hashtag.map((hash,idx) => <span key={idx}><a href="">#{hash}</a></span>)
                         }
                     </p>
                     <p>mark as Read</p>
