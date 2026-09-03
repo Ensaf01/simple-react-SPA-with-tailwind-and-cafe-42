@@ -7,8 +7,6 @@ const Header = () => {
                 <h2 className="text-4xl font-semibold rounded-lg">React SPA knowledge Cafes</h2>
                 <img src={profile} alt="" />
             </div>
-
-            
         </div>
     );
 };

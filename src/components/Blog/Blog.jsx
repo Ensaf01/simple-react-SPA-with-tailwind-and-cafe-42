@@ -1,7 +1,7 @@
 
 import { FaBookmark } from "react-icons/fa";
-const Blog = ({ blog }) => {
-    console.log(blog)
+const Blog = ({ blog,handleBookMarks }) => {
+    // console.log(blog)
     const {cover,author_img,author,posted_date,reading_time,title,hashtag}=blog;
     return (
         <div className="left-side-div flex  gap-3">
@@ -19,7 +19,9 @@ const Blog = ({ blog }) => {
                     <div className="flex gap-2">
                         <p>{reading_time} min read</p>
                         {/* use react icon and something install in bash and import */}
-                        <button><FaBookmark></FaBookmark></button>
+                        <button onClick={() => handleBookMarks(blog)}>
+                            <FaBookmark></FaBookmark>
+                        </button>
                     </div>
 
                 </div>
@@ -36,24 +38,7 @@ const Blog = ({ blog }) => {
 
 
             </div>
-            <div className="right-side-div">
-                <div>
-                    <h2 className="bg-blue-100 text-blue-900 text-3xl font-semibold border-2 border-blue-950 rounded-lg p-2">Spent Tine on read {}</h2>
-                </div>
-                <div className="bg-gray-400 flex flex-col p-4">
-                    <h1 className="flex items-center justify-center mb-5 font-bold">Bookmarked Blogs : 8</h1>
-
-                    <div className="flex flex-col gap-5  ">
-                        <p className="bg-white rounded-lg p-3">Master Microsoft Power Platform and Become an In-Demand!</p>
-                        <p className="bg-white rounded-lg p-3">Master Microsoft Power Platform and Become an In-Demand!</p>
-
-
-                    </div>
-
-                </div>
-
-
-            </div>
+            
 
         </div>
     );
