@@ -1,4 +1,4 @@
-import Blogs from "../Blogs/Blogs";
+
 import profile from "../../assets/images/profile.png";
 const Header = () => {
     return (
@@ -8,7 +8,7 @@ const Header = () => {
                 <img src={profile} alt="" />
             </div>
 
-            <Blogs></Blogs>
+            
         </div>
     );
 };
