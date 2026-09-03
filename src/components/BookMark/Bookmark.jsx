@@ -3,7 +3,7 @@
 const Bookmark = ({bookmark}) => {
     const {title}=bookmark;
     return (
-        <div className= "flex bg-gray-500 rounded-lg p-4  gap-2" >
+        <div className= "flex bg-gray-300 rounded-lg p-4  gap-2" >
             <h2>{title}</h2>
         </div>
     );
