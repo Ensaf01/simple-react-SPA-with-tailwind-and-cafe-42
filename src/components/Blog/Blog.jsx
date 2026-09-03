@@ -1,8 +1,8 @@
 
 import { FaBookmark } from "react-icons/fa";
-const Blog = ({ blog,handleBookMarks,handleSpentTime }) => {
+const Blog = ({ blog,handleBookMarks,handleMarksRead }) => {
     // console.log(blog)
-    const {cover,author_img,author,posted_date,reading_time,title,hashtag}=blog;
+    const {id,cover,author_img,author,posted_date,reading_time,title,hashtag}=blog;
     return (
         <div className="left-side-div flex  gap-3">
             <div className="border-2 border-blue-600 p-5" >
@@ -34,7 +34,7 @@ const Blog = ({ blog,handleBookMarks,handleSpentTime }) => {
                         }
                     </p>
                     <div>
-                        <button className="underline text-blue-500" onClick={()=>handleSpentTime(reading_time)}>Mark As read</button>
+                        <button className="underline text-blue-500" onClick={()=>handleMarksRead(reading_time,id)}>Mark As read</button>
 
                     </div>
                     

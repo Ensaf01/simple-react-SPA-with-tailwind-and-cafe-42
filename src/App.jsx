@@ -13,15 +13,22 @@ function App() {
     const NewBookMarks = [...bookmarks, blog];
     setbookmarks(NewBookMarks);
   }
-  const handleSpentTime =(oldTime) =>{
+  const handleMarksRead =(oldTime,id) =>{
     const newTime=spentTime+oldTime;
     setSpentTime(newTime);
+
+    // remove from bookmarks when click mark as read button
+  const RemainingBookMarks=bookmarks.filter(read => read.id!==id) // je id click hoyeche seta badhe all 
+  setbookmarks(RemainingBookMarks);
+
+  
+
   }
   return (
     <>
       <Header></Header>
       <div className='flex'>
-        <Blogs handleBookMarks={handleBookMarks} handleSpentTime={handleSpentTime}></Blogs>
+        <Blogs handleBookMarks={handleBookMarks} handleMarksRead={handleMarksRead}></Blogs>
         <BookMarks bookmarks={bookmarks} spentTime={spentTime}></BookMarks>
       </div>
 
