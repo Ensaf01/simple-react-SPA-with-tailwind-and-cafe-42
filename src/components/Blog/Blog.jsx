@@ -2,27 +2,32 @@
 
 const Blog = ({ blog }) => {
     console.log(blog)
+    const {cover,author_img,author,posted_date,reading_time,title,hashtag}=blog;
     return (
         <div className="left-side-div flex  gap-3">
             <div className="border-2 border-blue-600 p-5" >
-                <img className="w-full" src={blog.cover} alt="" />
+                <img className="w-full" src={cover} alt="" />
                 <div className="flex items-center justify-between gap-4 mt-5">
                     <div className="flex items-center gap-4">
-                        <img className="w-20 rounded-full" src={blog.author_img} alt="" />
+                        <img className="w-20 rounded-full" src={author_img} alt="" />
                         <div>
-                            <p className="font-bold text-2xl">{blog.author}</p>
-                            <p>{blog.posted_date}</p>
+                            <p className="font-bold text-2xl">{author}</p>
+                            <p>{posted_date}</p>
                         </div>
                     </div>
 
                     <div>
-                        <p>{blog.reading_time}</p>
+                        <p>{reading_time} min read</p>
                     </div>
 
                 </div>
                 <div className="flex flex-col gap-3 mt-5">
-                    <p className="text-4xl font-extrabold">{blog.title}</p>
-                    <p>{blog.hashtag}</p>
+                    <p className="text-4xl font-extrabold">{title}</p>
+                    <p>
+                        {
+                        blog.hashtag
+                        }
+                    </p>
                     <p>mark as Read</p>
                 </div>
 
