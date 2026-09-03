@@ -10,7 +10,7 @@ const Blogs = () => {
         .then(data => setBlogs(data))
     },[])
     return (
-        <div>
+        <div className="m-4 flex flex-col gap-20 ">
             {
                 blogs.map(blog => <Blog key={blog.id} blog={blog}></Blog>)
             }

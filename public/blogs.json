@@ -2,51 +2,51 @@
   {
     "id": 1,
     "author": "John Doe",
-    "author-img": "https://i.pravatar.cc/150?img=12",
+    "author_img": "https://i.pravatar.cc/150?img=12",
     "cover": "https://picsum.photos/800/400?random=1",
     "title": "Getting Started with React",
     "posted_date": "2026-09-01",
-    "reading_time": 4,
+    "reading_time": " 4 min read",
     "hashtag": "#react"
   },
   {
     "id": 2,
     "author": "Sarah Smith",
-    "author-img": "https://i.pravatar.cc/150?img=32",
+    "author_img": "https://i.pravatar.cc/150?img=32",
     "cover": "https://picsum.photos/800/400?random=2",
     "title": "Understanding JavaScript ES6",
     "posted_date": "2026-08-29",
-    "reading_time": 7,
+    "reading_time": " 7 min read",
     "hashtag": "#javascript"
   },
   {
     "id": 3,
     "author": "Alex Johnson",
-    "author-img": "https://i.pravatar.cc/150?img=5",
+    "author_img": "https://i.pravatar.cc/150?img=5",
     "cover": "https://picsum.photos/800/400?random=3",
     "title": "A Beginner's Guide to Tailwind CSS",
     "posted_date": "2026-08-25",
-    "reading_time": 5,
+    "reading_time": " 8 min read",
     "hashtag": "#tailwindcss"
   },
   {
     "id": 4,
     "author": "Emily Brown",
-    "author-img": "https://i.pravatar.cc/150?img=44",
+    "author_img": "https://i.pravatar.cc/150?img=44",
     "cover": "https://picsum.photos/800/400?random=4",
     "title": "Building Modern Web Applications",
     "posted_date": "2026-08-20",
-    "reading_time": 8,
+    "reading_time": " 16 min read",
     "hashtag": "#webdevelopment"
   },
   {
     "id": 5,
     "author": "Michael Wilson",
-    "author-img": "https://i.pravatar.cc/150?img=15",
+    "author_img": "https://i.pravatar.cc/150?img=15",
     "cover": "https://picsum.photos/800/400?random=5",
     "title": "Why Developers Should Learn Git",
     "posted_date": "2026-08-15",
-    "reading_time": 6,
+    "reading_time": " 6 min read",
     "hashtag": "#git"
   }
 ]
