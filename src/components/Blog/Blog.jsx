@@ -4,7 +4,7 @@ const Blog = ({ blog,handleBookMarks,handleMarksRead }) => {
     // console.log(blog)
     const {id,cover,author_img,author,posted_date,reading_time,title,hashtag}=blog;
     return (
-        <div className="left-side-div flex  gap-3">
+        <div className="left-side-div flex  gap-3 justify-between">
             <div className="border-2 border-blue-600 p-5" >
                 <img className="w-full" src={cover} alt="" />
                 <div className="flex items-center justify-between gap-4 mt-5">
